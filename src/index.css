@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #f8fafc;
+    color: #0f172a;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+}
+
+/* Professional White & Light Surfaces */
+.card-surface {
+  background: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  box-shadow: 0 20px 45px -10px rgba(15, 23, 42, 0.08), 0 4px 12px -2px rgba(15, 23, 42, 0.03);
+}
+
+.item-surface {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.item-surface:hover {
+  background: #f8fafc;
+  border-color: #93c5fd;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px -4px rgba(30, 96, 255, 0.12);
+}
+
+.item-surface-active {
+  background: #eff6ff;
+  border-color: #3b82f6;
+}
+
+/* Modal light surfaces */
+.modal-surface {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 25px 60px -15px rgba(15, 23, 42, 0.25), 0 0 0 1px rgba(0, 0, 0, 0.05);
+}
+
+/* Soft dot grid background */
+.bg-light-pattern {
+  background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
